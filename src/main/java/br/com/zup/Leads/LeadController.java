@@ -1,6 +1,7 @@
 package br.com.zup.Leads;
 
 import br.com.zup.Leads.dto.LeadDTO;
+import br.com.zup.Leads.dto.ProdutoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +22,7 @@ public class LeadController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void cadastrarLead(@RequestBody LeadDTO leadDTO){
+    public void cadastrarLead(@RequestBody LeadDTO leadDTO, ProdutoDTO produtoDTO){
         leadService.salvarLeads(leadDTO);
     }
 

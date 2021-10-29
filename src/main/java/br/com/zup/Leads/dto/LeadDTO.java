@@ -6,7 +6,7 @@ public class LeadDTO {
     private String email;
     private String nome;
     private String telefone;
-    private List<ProdutoDTO> listaDeProdutos;
+    private List<ProdutoDTO> produtos;
 
     public LeadDTO() {
     }
@@ -35,11 +35,12 @@ public class LeadDTO {
         this.telefone = telefone;
     }
 
-    public List<ProdutoDTO> getListaDeProdutos() {
-        return listaDeProdutos;
+    public List<ProdutoDTO> getProdutos() {
+        return produtos;
     }
 
-    public void setListaDeProdutos(List<ProdutoDTO> listaDeProdutos) {
-        this.listaDeProdutos = listaDeProdutos;
+    public void setProdutos(List<ProdutoDTO> produtos) {
+        this.produtos = produtos;
     }
 }
+
